@@ -1,0 +1,58 @@
+//index.pug    
+doctype html
+html 
+    head 
+      title Hasnain Dance aCaDemy
+      style 
+        include ../static/style.css 
+    body 
+      nav#navbar
+          ul 
+                div#logo 
+                    img(src = "/static/logo.jpg")
+                    | HDA
+                li #[a(href = "/") Home]
+                li #[a(href = "/") About]
+                li #[a(href = "/") Services]
+                li #[a(href = "/") Class INFO] 
+                li #[a(href = "/") Contact Us] 
+
+      section#introsection
+        div Welcome to hasnain's Dance aCaDemy
+        div.small Eat Sleep Dance Repeat
+      section#missionSection
+        h1 Our mission
+        div.card 
+            h2 Dance Perfection
+            div.card-box 
+                div.card-img 
+                    img(src = "/static/123.jpg")
+                div.card-content 
+                    p this is the best dance academy of the universe        
+        div.card 
+            h2 Dance the way you like
+            div.card-box 
+                div.card-img 
+                    img(src = "/static/123.jpg")
+                div.card-content 
+                    p this is the best dance academy of the universe
+        div.card 
+            h2 Professional training
+            div.card-box 
+                div.card-img 
+                    img(src = "/static/123.jpg")
+                div.card-content 
+                    p this is the best dance academy of the universe
+      section#sponsorsSection
+        h1 Our sponsors
+        div#sponsors 
+            img(src = "/static/logo2.png", alt="sponsors Image", class="spimage")
+            img(src = "/static/logo3.jpg", alt="sponsors Image", class="spimage")
+            img(src = "/static/logo4.jpg", alt="sponsors Image", class="spimage")
+            img(src = "/static/logo5.png", alt="sponsors Image", class="spimage")
+
+      footer#footer 
+        | Copyright @ 2020 HaanainDanceACaDemy.com|All rights reserved
+        
+      script 
+        include ../static/index.js         
